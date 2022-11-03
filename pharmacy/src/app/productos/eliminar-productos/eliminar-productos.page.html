@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Eliminar</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button text="Volver"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID #{{ producto.id}}</ion-card-subtitle>
+      <ion-card-title>Realmente desea eliminar a {{ producto.nombre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Precio: <strong>{{producto.precio}}</strong></ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cantidad: <strong>{{producto.stock}}</strong></ion-label>
+      </ion-item>
+    </ion-card-content> 
+    <ion-button (click)="eliminarProducto()" expand="block" color="danger">Eliminar</ion-button>
+  </ion-card>
+</ion-content>

@@ -1,27 +1,35 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    font-family: "Poppins";
+    text-align: center;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content{
+    text-align: center;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-toolbar{
+    background-color: rgb(97, 176, 212);
 }
-
-#container a {
-  text-decoration: none;
+ion-title{
+    color: var(--first-color-ligth);
+}
+ion-text{
+    
+    text-decoration: overline;
+    font-size: 2rem;
+    color: rgb(25, 75, 98);
+}
+.texto{
+    background-color: var(--ion-color-mycolor);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+strong{
+    text-align: right;
+    font-size: 10px;
+}
+ion-card{
+    margin: 1px;
 }

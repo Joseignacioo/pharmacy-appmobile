@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button text="Volver"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" style="font-family: 'Poppins';">Email</ion-label>
+        <ion-input position="floating" type="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" style="font-family: 'Poppins';">Contraseña</ion-label>
+        <ion-input position="floating" type="password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <div class="link">
+    <ion-router-link color="danger">¿olvidaste la contraseña?</ion-router-link>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-button size="large" color="mycolor" expand="block" (click)="login()">Iniciar Sesion</ion-button>
+</ion-footer>

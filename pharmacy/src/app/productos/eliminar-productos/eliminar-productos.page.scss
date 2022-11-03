@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    font-family: "Poppins";
+
+}
+ion-content{
+    text-align: center;
+}
+ion-toolbar{
+    background-color: rgb(97, 176, 212);
+}
+ion-title{
+    color: var(--first-color-ligth);
+}
